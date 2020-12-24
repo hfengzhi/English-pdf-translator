@@ -1,7 +1,5 @@
-import sys
-from PyQt5.QtWidgets import *
-from PyQt5.QtCore import *
-from PyQt5.QtGui import *
+from PyQt5.QtCore import Qt
+from PyQt5.QtWidgets import   QPushButton, QStackedWidget,QWidget, QHBoxLayout, QVBoxLayout, QLabel,QFileDialog,QSizePolicy,QListWidget
 import qtawesome
 import os
 from reader.configure import config
@@ -83,7 +81,7 @@ class LeftTabWidget(QWidget):
         self.formLayout3 = QHBoxLayout(self.form3)
         self.label3 = QLabel()
         self.label3.setText(
-            "")
+            "打开PDF\n打开文件夹\n列表开关\n收藏当前PDF\n取消收藏\n文件夹中PDF列表\n收藏列表\n")
         self.label3.setSizePolicy(QSizePolicy(
             QSizePolicy.Expanding, QSizePolicy.Expanding))
         self.label3.setAlignment(Qt.AlignCenter)
